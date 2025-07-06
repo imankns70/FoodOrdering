@@ -1,4 +1,4 @@
-namespace FoodOrdering.Ordering
+namespace FoodOrdering.NotificationService.Api
 {
     public class WeatherForecast
     {

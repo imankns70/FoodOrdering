@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace FoodOrdering.Ordering.Controllers
+namespace FoodOrdering.NotificationService.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]

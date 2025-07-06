@@ -5,12 +5,15 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
-	ProjectSection(SolutionItems) = preProject
-		docker-compose.yml = docker-compose.yml
-	EndProjectSection
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FoodOrdering.PaymentService", "FoodOrdering.PaymentService", "{AE82D672-3A40-4EEE-AD94-266C14A00677}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodOrdering.Ordering", "FoodOrdering.Ordering\FoodOrdering.Ordering.csproj", "{31F4082E-C16D-4C39-AA4B-C5319FD4E56E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FoodOrdering.OrderingService", "FoodOrdering.OrderingService", "{AB88F93E-C11C-4C4B-91EF-749CF8A69843}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FoodOrdering.NotificationService", "FoodOrdering.NotificationService", "{9864CB87-6011-432A-BBF6-5A47F77FF072}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodOrdering.NotificationService.Api", "src\FoodOrdering.NotificationService\FoodOrdering.NotificationService.Api\FoodOrdering.NotificationService.Api.csproj", "{F7D0300E-CA8C-428C-809F-EF07C6AA43AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodOrdering.PaymentService.Api", "src\FoodOrdering.PaymentService\FoodOrdering.PaymentService.Api\FoodOrdering.PaymentService.Api.csproj", "{A6DF8A2A-D098-4005-A49F-B57DC218D71F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,16 +21,24 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{31F4082E-C16D-4C39-AA4B-C5319FD4E56E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31F4082E-C16D-4C39-AA4B-C5319FD4E56E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31F4082E-C16D-4C39-AA4B-C5319FD4E56E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31F4082E-C16D-4C39-AA4B-C5319FD4E56E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7D0300E-CA8C-428C-809F-EF07C6AA43AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7D0300E-CA8C-428C-809F-EF07C6AA43AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7D0300E-CA8C-428C-809F-EF07C6AA43AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7D0300E-CA8C-428C-809F-EF07C6AA43AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6DF8A2A-D098-4005-A49F-B57DC218D71F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6DF8A2A-D098-4005-A49F-B57DC218D71F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6DF8A2A-D098-4005-A49F-B57DC218D71F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6DF8A2A-D098-4005-A49F-B57DC218D71F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{31F4082E-C16D-4C39-AA4B-C5319FD4E56E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{AE82D672-3A40-4EEE-AD94-266C14A00677} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{AB88F93E-C11C-4C4B-91EF-749CF8A69843} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{9864CB87-6011-432A-BBF6-5A47F77FF072} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{F7D0300E-CA8C-428C-809F-EF07C6AA43AD} = {9864CB87-6011-432A-BBF6-5A47F77FF072}
+		{A6DF8A2A-D098-4005-A49F-B57DC218D71F} = {AE82D672-3A40-4EEE-AD94-266C14A00677}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B695E285-5FC9-49C9-9B33-4B87DB04D5C0}
