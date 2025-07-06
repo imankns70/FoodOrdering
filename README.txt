@@ -34,10 +34,8 @@ FoodOrdering is a microservices-based application built with .NET 9, designed fo
 ├── .gitignore              # Git ignore rules
 ├── .github/                # GitHub workflows for CI/CD
 ├── backend/                # Backend microservices source code
-├── frontend/               # FrontEnd
 │       ├── FoodOrdering.OrderingService/
 │       ├── FoodOrdering.PaymentService/
 │       ├── FoodOrdering.NotificationService/
-├── docker-compose.yml
-├── README.md
-└── .gitignore
+├── frontend/               # FrontEnd
+ 
