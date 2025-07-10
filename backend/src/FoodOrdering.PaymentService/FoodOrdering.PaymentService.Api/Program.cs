@@ -1,14 +1,17 @@
+using FoodOrdering.PaymentService.Api.BackgroundServices;
+using FoodOrdering.PaymentService.Api.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 if (builder.Environment.IsProduction())
 {
     builder.WebHost.UseUrls("http://*:80");
 }
 // Add services to the container.
-
+builder.Services.AddHostedService<OrderCreatedConsumerService>();
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
-
+builder.Services.AddSingleton<IKafkaProducer, KafkaProducer>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

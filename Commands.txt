@@ -1,0 +1,6 @@
+docker exec -it foodordering-kafka-1 kafka-topics --create --topic payment-succeeded --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+
+
+show topics 
+docker exec -it foodordering-kafka-1 kafka-topics --list --bootstrap-server localhost:9092
+

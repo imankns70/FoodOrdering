@@ -1,3 +1,7 @@
+using FoodOrdering.OrderingService.Api.Services;
+using FoodOrdering.OrderingService.Services;
+using FoodOrdering.OrderingServiceApi.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 if (builder.Environment.IsProduction())
 {
@@ -5,6 +9,8 @@ if (builder.Environment.IsProduction())
 }
 // Add services to the container.
 
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+builder.Services.AddScoped<IKafkaProducer, KafkaProducer>();
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();

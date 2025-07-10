@@ -1,3 +1,5 @@
+using FoodOrdering.NotificationService.Api.BackgroundServices;
+
 var builder = WebApplication.CreateBuilder(args);
 if (builder.Environment.IsProduction())
 {
@@ -8,6 +10,8 @@ if (builder.Environment.IsProduction())
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+builder.Services.AddHostedService<PaymentSucceededConsumerService>();
 
 var app = builder.Build();
 
